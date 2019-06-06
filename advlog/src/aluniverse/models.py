@@ -3,7 +3,7 @@ from django.conf import settings
 
 
 class RPGModule(models.Model):
-    """ describe the optional module used for one universe. It can be a ruleset
+    """ describe the optional module used for one aluniverse. It can be a ruleset
     or a module for specific periode of time.
     """
     name = models.CharField(max_length=200, unique=True)
@@ -17,7 +17,7 @@ class RPGModule(models.Model):
 
 
 class Universe(models.Model):
-    """ describe an universe
+    """ describe an aluniverse
     """
     name = models.CharField(max_length=200, unique=True)
     description = models.TextField(blank=True)
